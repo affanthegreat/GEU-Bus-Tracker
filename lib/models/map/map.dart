@@ -30,13 +30,8 @@ class _HomePageState extends State<HomePage> {
  Set<Marker> markers = {};
 
  String startCoordinatesString = '(${currentPosition.latitude}, ${currentPosition.longitude})';
- var l = [];
- void printObject(Object object) {
-   Map jsonMapped = json.decode(json.encode(object));
-   JsonEncoder encoder = new JsonEncoder.withIndent('  ');
-   String prettyPrint = encoder.convert(jsonMapped);
-   debugPrint(prettyPrint);
- }
+
+
 
   slave() async {
    var l = [];
